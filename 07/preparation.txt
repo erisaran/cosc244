@@ -1,0 +1,23 @@
+1) Reading bytes and decoding them into characters.
+
+2) Wrapping an InputStreamReader within a BufferedReader
+
+3) readLine()
+ 
+4) prints the string and terminates the line, returns void
+
+5) creates a server socket bound to the port
+
+6) listens for a connection to this socket and accepts it, returns a Socket
+
+7) Socket(InetAddress address, int port)
+
+8) returns an InputStream for the socket
+
+9) getOutputStream()
+
+10) the current time
+
+11) System.out.print(date.toString());
+
+12) the port to connect through to and the ip of the computer to connect to

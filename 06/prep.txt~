@@ -1,0 +1,23 @@
+1) ^
+
+2) reading streams of raw bytes
+
+3) FileInputStream f1 = new FileInputStream(file);
+
+4) read(), an int
+
+5) writing streams of raw bytes
+
+6) FileOutputStream s1 = new FileOutputStream(file);
+
+7) write(int b)
+
+8) close()
+
+9) public class Practice {
+       public static void main(String[] args) {
+           for (int i = 0; i < args[1]; i++){
+               System.out.println(args[0]);
+           }
+       }
+   }

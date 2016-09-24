@@ -1,0 +1,10 @@
+1) So that no other thread may access clients and modify it while the
+   current thread is accessing it.
+
+2) new MultiServer().start();
+
+3) 31 - 41
+
+4) ChatServer started.
+
+5) Welcome you are client_1.

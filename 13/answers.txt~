@@ -1,0 +1,10 @@
+1) returns the local port number to which the socket is bound as an int.
+
+2) returns the address to which the socket is connected as an InetAddress object
+
+3) returns the remote port number to which the socket is connected
+
+4) prints out the InetAddress and the local port of the socket
+
+5) prints out the InetAddress of the socket accepted by the serversocket and prints its port number and the local port of the server.
+

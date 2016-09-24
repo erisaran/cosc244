@@ -1,0 +1,28 @@
+1) prints a line of text to the output stream of the socket
+
+2) the socket's output stream
+
+3) so that the id can be printed out when the ClientHandler object is a parameter of a print method.
+
+4) no, because the count variable is incremented and used as the id for the next connection. count doesnt decrease when a client disconnects.
+
+5) 12 try {
+   13   new ChatServer().startServer(Integer.parseInt(args[0]));
+
+   20 public void startServer(int port) throws Exception {
+   21   ServerSocket serverSocket = new ServerSocket(port);
+   22   System.err.println("ChatServer started");
+   23   while(true) {
+   24     ClientHandler ch = new ClientHandler(serverSocket.accept());
+
+
+6) 10
+
+7) The 3 client handler threads start by sending a welcome message. 
+They then start an infinite while loop which calls the sendAll method whenever a line of text is read by the ChatServer.
+
+The 3 Clients start 2 threads each one for reading user input and sending it to the server and one for reading from the server and writing to stdout. 
+
+The main thread starts a infinite while loop that listens for new connections and starts the new threads.
+
+

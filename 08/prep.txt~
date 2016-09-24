@@ -1,0 +1,19 @@
+1) by making a subclass of thread and overriding the run method of the thread class
+   or by making a class that implements the runnable interface and passing it to a new Thread       object constructor as an argument
+
+2) run()
+
+3) start()
+
+4) new ReadWriteThread(System.in, socket.getOutputStream()).start();
+   new ReadWriteThread(socket.getInputStream(), System.out).start();
+   TCPExample3 example = new TCPExample3(socket);
+   example.startReceiving();
+
+5) they create and start two ReadWriteThreads one reads from system.in and outputs to the output   stream of the socket and the other reads from the sockets inputstream and outputs to system.out
+
+6) yes because it would start the thread that reads from the sockets printwriter before a thread    that sends anything there exists
+
+7)
+
+8) because a thread starts while another thread is in progress and so it pre-empts the first        thread and begins printing and then when its finished the first thread continues from where it   stopped

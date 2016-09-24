@@ -1,0 +1,30 @@
+1) So that no other thread may access clients and modify it while the
+   current thread is accessing it.
+
+2) new MultiServer().start();
+
+3) 31 - 41
+
+4) ChatServer started.
+
+5) Accepted connection from client_1
+
+6) Welcome you are client_1.
+
+7) Accepted connection from client_2
+
+8) Welcome you are client_2.
+
+9) client_1: Hello
+
+10) client_1: Hello
+
+11) Sending 'Hello' to : [client_1, client_2, client_3]
+
+12) client_3 closed connection!
+
+13) client_1: and its message
+
+14) client 3 is no longer included in where the server is sending to.
+
+15) client 4

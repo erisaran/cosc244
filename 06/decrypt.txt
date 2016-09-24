@@ -1,0 +1,4 @@
+The first program you write will implement a Caesar cipher. Encrypting data using a Caesar
+cipher involves replacing each character with a character which is a set distance away (in the
+character set) from it. For example if you were encrypting the word "and" using a shift of 3,
+it would become "dqg".

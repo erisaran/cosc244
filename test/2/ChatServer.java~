@@ -1,0 +1,39 @@
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+public class ChatServer {
+
+    private List<ClientHandler> clients = new LinkedList<ClientHandler>();
+
+    public static void main(String [] args){
+        try{
+            new ChatServer().startServer(Integer.parseInt(args[0]));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void startServer(int port) throws exception{
+        ServerSocket serverSocket = new ServerSocket(port);
+        System.err.println("listening on port " + port);
+        while (true){
+            ClientHandler ch = new ClientHandler(serverSocket.accept());
+            System.err.println("accepted connection from " + ch);
+            synchronized(clients){
+                clients.add(ch);
+            }
+            ch.start();
+        }
+    }
+
+    public void sendAll(String line, ClientHandler sender){
+        System.err.println("sending " + line + "to : " + clients);
+        synchronized(clients){
+            for (ClientHandler cl : clients){
+                cl.send(sender + ": " + line);
+            }
+        }
+    }
+
+    public class ClientHandler

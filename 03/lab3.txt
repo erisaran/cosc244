@@ -1,0 +1,17 @@
+Q.1 InputStream
+Q.2 read()
+Q.3 abstract int
+Q.4 -1
+
+Q.5 PrintStream
+Q.6 write(int b)
+Q.7 an int
+Q.8
+
+Q.9 readLine()
+Q.10 String, null
+
+Q.11 Scanner sc = new Scanner(System.in);
+Q.12 hasNextLine()
+Q.13 nextLine(), String
+Q.14 next(), hasNext()

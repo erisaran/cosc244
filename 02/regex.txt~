@@ -1,0 +1,36 @@
+Regular expression exercises
+
+Emacs requires a double backslash \\ to escape the characters (){}|
+in the RE-Builder.
+
+A) 1. aabbaa                 B) y 1. abc                    C) y 1. abc  
+   2. abababa                   2. ac                         y 2. xyz  
+  y  3. aaba                   y 3. abbb                       3. abc|xyz
+   4. aba                       4. bbc
+  y  5. aabababa     
+
+D) y 1. abc                    E) y 1. battle!               F)y 1. Putt=
+   y 2. abbbbbbbb                 2. Hot.                     2. BotHEr,=
+   y 3. abcbcbcbc                 3. green                    3. Ample
+   4. ac                        y 4. swamping.                4. FIdDlE7h=
+   y 5. asccbbbbcbcccc            5. undulate?                y 5. Brittle =
+                                6. is.?                       y 6. Other.=
+
+G) y 1. <an xml tag>           H) 1. very fat man            I) 1. A. B
+   2. <opentag> <closetag>      2. fat tall man               2. c! d
+   y 3. </closetag>             y 3. very very fat jolly man    3. e f
+   4. <>                        4. very short man              y 4. g.  H
+   y 5. <with attribute="red">  y 5. very very very tall man   y 5. i?  J
+                                                               6. k L
+
+ J)  3 20.3 -17.5   -?[0-9]+[.]?[0-9]?+
+
+ 12.0037,19,18.2 -13  
+
+    The number is 162.
+
+K)  <atag> <badly-nested> </atag></badly-nested>
+
+    <atag> <another-tag> </another-tag></atag>
+
+L) Using word boundaries eg. \bfb\
